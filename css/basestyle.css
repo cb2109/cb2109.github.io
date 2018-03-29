@@ -42,7 +42,7 @@ header > * {
     margin-bottom: 0px;
 }
 
-@media (max-width: 12450px) {
+@media (max-width: 800px) {
     .titleborder {
         display: none;
     }
