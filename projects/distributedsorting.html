@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="rgb(207, 232, 255)">
+    <meta name="description" content="A resumé and portfolio for Chris Bates">
+    <title>Chris Bates' website</title>
+
+    <link rel="icon" type="image/png" href="../icons/favicon-16x16.png" sizes="16x16">  
+    <link rel="icon" type="image/png" href="../icons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../icons/favicon-96x96.png" sizes="96x96">  
+
+    <link defer async rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link defer async rel="stylesheet" type="text/css" href="../css/basestyle.css">
+
+    <script defer src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script defer src="../js/corejs.js"></script>
+
+
+</head>
+<body>
+    <div class="container maincontainer">
+        <header>
+            <h1 class="display-1 title">Distributed Sorting</h1>
+        </header>
+        <main>
+            <section>
+                <h2>Summary</h2>
+                <p>
+                    This Java project leverages less used sorting methods to try to work on faster ways of sorting large data sets than the standard sorts.<br>
+                    The code is hosted on github <a href="https://github.com/cb2109/DistributedSorting" target="new">here</a>.
+                </p>
+            </section>
+            <section>
+                <h2>What I have achieved so far</h2>
+                <ul>
+                    <li>Started introducing basic unit tests to test that the data comes out sorted and that restrictions on building the various components are enforced with appropriate exceptions</li>
+                    <li>Project structure is in place to run a basic sorting algorithm across the data</li>
+                    <li>The top layer of bucket sort is in place, which would distribute the data to the nodes/threads to do the sorting</li>
+                    <li>Sub nodes successfully sort the data using the inbuilt sort</li>
+                    <li>We combine the data back into a Java stream, which is then tested to be validly sorted</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Why?</h2>
+                <ul>
+                    <li>A good project to experiment with Java streams and revisit concurrency in Java 8/9</li>
+                    <li>Creating a nice library for solving these sort of problems, where the data distribution is known</li>
+                    <li>It allows me to re-look at sorting algorithms for study purposes</li>
+                </ul>
+            </section>
+            <section>
+                <h2>What's next</h2>
+                <ul>
+                    <li>Transferring all the sorting into a nested bucket sort, using this method we can better balance the data for more complex distributions</li>
+                    <li>Add more complex data distributions like Gaussian distributions or ways to customize the distribution to your own design</li>
+                    <li>Add tests for performance versus a standard built-in sorting algorithm</li>
+                    <li>Properly distribute the child sorters as threads and connect them via a message queue of some sort</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Skills used</h2>
+                <ul>
+                    <li>Java: Building this into a nice easy to configure library for others to use, while also toying with Java 9's new features including streams. Finally looking into message queue solutions and multi-threading</li>
+                    <li>Algorithms: Investigating different sorting algorithms and figuring out how to use data distributions to plan a more focused and optimal sort</li>
+                    <li>Distributed processing/concurrency: Reading into and implementing distribution solutions and applying care with concurrency to create a robust and quick solution</li>
+                    <li>Unit tests: Adding unit tests to ensure every part of the code is tested. Trying to do test driven development at a high level to ensure that the library is focused around how it is configured and not just a collection of classes</li>
+                </ul>
+            </section>
+            
+                
+        </main>
+    </div>
+</body>
+</html>
