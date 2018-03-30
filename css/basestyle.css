@@ -53,6 +53,11 @@ li {
     list-style-type: circle;
 }
 
+a {
+    color: #0011f1;
+    font-weight: bold;
+}
+
 
 .title {
     margin-top: calc(-1 * var(--title-sizing));
