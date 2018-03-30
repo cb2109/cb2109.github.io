@@ -2,7 +2,9 @@
  * Core styling of the website
  */
 :root {
+    /* main colour of the background, used to match stuff to the bg */
     --main-background-color: rgb(207, 232, 255);
+    /* General dimensions we use for the title, this also determines triange sizes on the page */
     --title-sizing: 106px;
     --off-white: rgb(253, 253, 253);
     --font-color: rgb(33, 37, 41);
@@ -12,10 +14,28 @@ body {
     background-color: var(--main-background-color);
 }
 
+
+header {
+    /* creates the triangle shape at the bottom right of the page */
+    border-top: var(--title-sizing) solid var(--off-white);
+    border-left: var(--title-sizing) solid var(--main-background-color);
+    margin-left: calc(-1 * var(--title-sizing));
+    margin-right: calc(1 * var(--title-sizing));
+    line-height: 0px;
+}
+
 main {
     background-color: var(--off-white);
     padding: 10px;
     height: 100%;
+    /* creates the triangle shape at the bottom right of the page */
+    border-bottom: var(--title-sizing) solid var(--off-white);
+    border-right: var(--title-sizing) solid var(--main-background-color);
+}
+
+main > :last-child {
+    /* removes the space created by the triangle border */
+    margin-bottom: calc(-1 * var(--title-sizing));
 }
 
 section {
@@ -33,21 +53,12 @@ li {
     list-style-type: circle;
 }
 
-header > * {
-    display: inline-block;
-}
 
-.titleborder {
-    margin-left: calc(-1 * var(--title-sizing));
-    vertical-align: bottom;
-    border-top: var(--title-sizing) solid var(--off-white);
-    border-left: var(--title-sizing) solid var(--main-background-color);
-}
 .title {
-    width: 100%;
-    height: var(--title-sizing);
-    background-color: var(--off-white);
+    margin-top: calc(-1 * var(--title-sizing));
     margin-bottom: 0px;
+    background-color: var(--off-white);
+    vertical-align: top;
 }
 
 .itemdates {
