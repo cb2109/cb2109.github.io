@@ -14,7 +14,9 @@
     <link defer async rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link defer async rel="stylesheet" href="css/basestyle.css">
 
-    <script defer src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script defer src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script defer src="js/corejs.js"></script>
 
 
@@ -27,18 +29,23 @@
         <main>
             <h2>Work Experience</h2>
             <section>
-                <h4>AXLR8 Ltd</h4>
-                <p class="summary">
-                    <span class="itemrole">
-                        <strong>Software Engineer</strong> (Remote contractor as of 1/18)
-                    </span>
-                    <span class="itemdates">
-                        11/01/14-Present
-                    </span>
-                </p>
-                <p class="detail">
-                    Full stack development for CRM/staff management program that provides event management for experiential staffing companies.
-                    <ul>
+                <div class="resumeitem">
+                    <h4>AXLR8 Ltd</h4>
+                    <p class="itemsummary">
+                        <span class="itemrole">
+                            <strong>Software Engineer</strong> (Remote contractor as of 1/18)
+                        </span>
+                        <span class="itemdates">
+                            11/01/14-Present
+                        </span>
+                    </p>
+                    <p class="itemdescription">
+                        Full stack development for CRM/staff management program that provides event management for experiential staffing companies.
+                    </p>
+                    <a class="btn btn-primary" data-toggle="collapse" href="#axlr8jobdetail" role="button" aria-expanded="false" aria-controls="axlr8jobdetail">
+                        Details
+                    </a>
+                    <ul id="axlr8jobdetail" class="itemdetail collapse">
                         <li>
                             Created a MSAccess SQL to PostgreSQL interpreter to support both legacy and current systems while migrating databases. Performing this accurately and efficiently required a deep understanding of SQL and interpreter technology. This had to be written in PHP and vbscript.
                         </li>
@@ -58,19 +65,24 @@
                             Automated and improved server/developer setup into batch files to reduce on-boarding and server set up times.
                         </li>
                     </ul>
-                </p>
-                <h4>Formicary Ltd (acquired by Accenture LLP)</h4>
-                <p>
-                    <span class="itemrole">
-                        <strong>Junior Systems Engineer</strong> (Intern)
-                    </span>
-                    <span class="itemdates">
-                        04/02/12–09/21/12
-                    </span>
-                </p>
-                <p>
-                    Internship to develop systems to assist contractors at the company and develop solutions to assist in some tasks for the finance industry.
-                    <ul>
+                </div>
+                <div class="resumeitem">
+                    <h4>Formicary Ltd (acquired by Accenture LLP)</h4>
+                    <p class="itemsummary">
+                        <span class="itemrole">
+                            <strong>Junior Systems Engineer</strong> (Intern)
+                        </span>
+                        <span class="itemdates">
+                            04/02/12–09/21/12
+                        </span>
+                    </p>
+                    <p class="itemdescription">
+                        Internship to develop systems to assist contractors at the company and develop solutions to assist in some tasks for the finance industry.
+                    </p>
+                    <a class="btn btn-primary" data-toggle="collapse" href="#formicaryjobdetail" role="button" aria-expanded="false" aria-controls="formicaryjobdetail">
+                        Details
+                    </a>
+                    <ul id="formicaryjobdetail" class="itemdetail collapse">
                         <li>
                             Developed a Java library to gather share prices from various free sources. 
                         </li>
@@ -81,7 +93,7 @@
                             Migrated a performance monitor software to Cassandra, including large refactors of how data was accessed and stored to improve performance (​<a href="https://www.accenture.com/t20161020T021648Z__w__/us-en/_acnmedia/PDF-33/Accenture-Calmon.pdfla=en" target="new">Calypso monitor​</a>).
                         </li>
                     </ul>
-                </p>
+                </div>
             </section>
             <h2>Technical Skills</h2>
             <section>
