@@ -67,11 +67,14 @@ li {
 }
 
 @media (max-width: 800px) {
-    .titleborder {
-        display: none;
+    header {
+        border: none;
+        margin: 0px;
     }
     .title {
-        display: block;
-        height: auto;
+        margin: 0px;
+    }
+    main {
+        border-right: none;
     }
 }
