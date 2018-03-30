@@ -25,6 +25,14 @@ section {
     padding-left: 5px;
 }
 
+ul {
+    padding-left: 30px;
+}
+
+li {
+    list-style-type: circle;
+}
+
 header > * {
     display: inline-block;
 }
@@ -40,6 +48,11 @@ header > * {
     height: var(--title-sizing);
     background-color: var(--off-white);
     margin-bottom: 0px;
+}
+
+.itemdates {
+    float: right;
+    font-weight: bold;
 }
 
 @media (max-width: 800px) {
