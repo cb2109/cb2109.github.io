@@ -5,13 +5,14 @@
     /* main colour of the background, used to match stuff to the bg */
     --main-background-color: rgb(207, 232, 255);
     /* General dimensions we use for the title, this also determines triange sizes on the page */
-    --title-sizing: 106px;
+    --title-sizing: 115px;
     --off-white: rgb(253, 253, 253);
     --font-color: rgb(33, 37, 41);
 }
 
-body {
+html, body {
     background-color: var(--main-background-color);
+    height: 100%;
 }
 
 
@@ -51,11 +52,16 @@ ul {
 
 li {
     list-style-type: circle;
+    margin-bottom: 4px;
 }
 
 a {
     color: #0011f1;
     font-weight: bold;
+}
+
+.maincontainer {
+    height: calc(100% - var(--title-sizing));
 }
 
 
@@ -64,6 +70,7 @@ a {
     margin-bottom: 0px;
     background-color: var(--off-white);
     vertical-align: top;
+    cursor: pointer;
 }
 
 .itemdates {

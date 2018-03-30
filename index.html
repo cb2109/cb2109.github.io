@@ -5,14 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="rgb(207, 232, 255)">
     <meta name="description" content="A resumé and portfolio for Chris Bates">
+    <title>Chris Bates' website</title>
 
     <link rel="icon" type="image/png" href="icons/favicon-16x16.png" sizes="16x16">  
     <link rel="icon" type="image/png" href="icons/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="icons/favicon-96x96.png" sizes="96x96">  
 
-    <title>Chris Bates' website</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/basestyle.css">
+    <link defer async rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link defer async rel="stylesheet" type="text/css" href="css/basestyle.css">
+
+    <script defer src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script defer src="js/corejs.js"></script>
+
+
 </head>
 <body>
     <div class="container">
@@ -50,7 +55,7 @@
                             Managed SSL certificates and policies to ensure we were using the most appropriate cryptographic protocols.
                         </li>
                         <li>
-                            Automated and improved server/developer setup into batch files to reduce onboarding and server set up times.
+                            Automated and improved server/developer setup into batch files to reduce on-boarding and server set up times.
                         </li>
                     </ul>
                 </p>
@@ -73,7 +78,7 @@
                             Developed a javascript web site and Java server to manage employee expenses.
                         </li>
                         <li>
-                            Migrated a performance monitor software to Cassandra, including large refactors of how data was accessed and stored to improve performance (​<a href="https://www.accenture.com/t20161020T021648Z__w__/us-en/_acnmedia/PDF-33/Accenture-Calmon.pdfla=en">Calypso monitor​</a>).
+                            Migrated a performance monitor software to Cassandra, including large refactors of how data was accessed and stored to improve performance (​<a href="https://www.accenture.com/t20161020T021648Z__w__/us-en/_acnmedia/PDF-33/Accenture-Calmon.pdfla=en" target="new">Calypso monitor​</a>).
                         </li>
                     </ul>
                 </p>
@@ -88,6 +93,27 @@
                 <h4>Software Packages</h4>
                 <p>
                     GIT, SVN, Eclipse/JetBeans/IntelliJ, MS Office, Putty, Linux/Windows terminal, Wordpress (simple plugin development and setup), Basic mail administration (exim, spamassassin), Microsoft IIS, Apache.
+                </p>
+                <h4>My Projects</h4>
+                <p>
+                    Below is an overview of multiple personal projects that are hosted on <a href="https://github.com/cb2109" target="new">my github</a>.
+                    <ul>
+                        <li>
+                            <a href="projects/distributedsorting.html">Distributed sorting</a>: 
+                            Here I explore the idea of a <a href="https://en.wikipedia.org/wiki/Bucket_sort" target="new">bucket sort</a> and how it can be used to distribute sorting loads. Then the aim is to be able to use knowledge of the data set being worked on to try to balance the load of each sorter.<br>
+                            <strong>Skills:</strong> Java, algorithms, distributed processing/concurrency, unit tests.
+                        </li>
+                        <li>
+                            <a href="projects/imageprocessing.html">Image processing</a>:
+                            During university I really enjoyed the image processing course and I've tried to keep abreast of advancements in the field. Revisiting a selection of those algorithm, the project aims to be able to extract things like probably faces from the images.<br>
+                            <strong>Skills:</strong> Java, image processing, Java 8/9 patterns.
+                        </li>
+                        <li>
+                            <a href="projects/thissite.html">This site</a>:
+                            This is just the various tools, libraries and code used to create and host this website. This website is hosted on Amazon S3 and cloudfront CDNs to deal with content distribution and SSL.<br>
+                            <strong>Skills:</strong> CSS, AWS, design, hosting.
+                        </li>
+                    </ul>
                 </p>
             </section>
             <h2>Education</h2>
@@ -105,7 +131,7 @@
                     GPA 3.2-3.6 equivalent.
                     <ul>
                         <li>
-                            My masters thesis was the implementation and optimisation of a music transcription algorithm in Java, mainly how to optimise complex mathematical computations.
+                            My masters thesis was the implementation and optimization of a music transcription algorithm in Java, mainly how to optimize complex mathematical computations.
                         </li>
                     </ul>
                 </p>
