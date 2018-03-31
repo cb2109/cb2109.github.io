@@ -60,6 +60,10 @@ a {
     font-weight: bold;
 }
 
+a:not([href]):not([tabindex]) {
+    color: #fff;
+}
+
 .maincontainer {
     height: calc(100% - var(--title-sizing));
 }
@@ -80,6 +84,35 @@ a {
 
 .resumeitem {
     margin-bottom: 10px;
+}
+
+
+
+.animateout {
+    animation: hidepage 1s;
+    opacity: 0;
+}
+
+.animatein {
+    animation: showpage 1s;
+    opacity: 1;
+}
+
+@keyframes hidepage {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes showpage {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 @media (max-width: 800px) {

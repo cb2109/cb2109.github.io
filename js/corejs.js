@@ -4,11 +4,18 @@
 (function($) {
 
     $(function() {
-        $(".title").click(returnToHomePage);
+        $(".pagechange").click(animateout);
     });
 
-    function returnToHomePage() {
-        window.location = "/";
+    function animateout() {
+        var $that = 
+        $(".maincontainer").removeClass("animatein").addClass("animateout");
+        var pageurl = $(this).attr("pageurl");
+        if (pageurl !== "") {
+            setTimeout(function() {
+                window.location.href = pageurl;
+            }, 1000);
+        }
     }
 
 })(jQuery);
