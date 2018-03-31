@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="rgb(207, 232, 255)">
+    <meta name="description" content="A resumé and portfolio for Chris Bates">
+    <title>Chris Bates' website</title>
+
+    <link rel="icon" type="image/png" href="../icons/favicon-16x16.png" sizes="16x16">  
+    <link rel="icon" type="image/png" href="../icons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../icons/favicon-96x96.png" sizes="96x96">  
+
+    <link defer async rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link defer async rel="stylesheet" href="../css/basestyle.css">
+
+    <script defer src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script defer src="../js/corejs.js"></script>
+
+
+</head>
+<body>
+    <div class="container maincontainer animatein">
+        <header>
+            <h1 class="display-1 title pagechange" pageurl="/">Image Processing</h1>
+        </header>
+        <main>
+            <section>
+                <h2>Summary</h2>
+                <p>
+                    This Java project gave me the opportunity to revisit some image processing algorithms.
+                    A lot of the work here was studying the theory behind them, as well as tweaking parameters to create good line detection within a set of sample images.<br>
+                    The code is hosted on github <a href="https://github.com/cb2109/imageprocessing" target="new">here</a>.
+                </p>
+            </section>
+            <section>
+                <h2>What I have achieved so far</h2>
+                <ul>
+                    <li>Implemented a Gaussian filter that blurs the image by averaging out each pixel with the neighboring pixels</li>
+                    <li>Implemented a generic convolution transformation, which applies a small matrix to each pixel in an image to get a new summed value for the pixel. This can be used to detect intensity and direction of edges (e.g. Robert's Cross filter)</li>
+                    <li>Implemented a full Canny Edge detector, which uses a Gaussian filter and Sobel edge detector (convolution) to pull out edges. Then it uses "non-maximal suppression" to only take pixels that are considered at the top of the edge</li>
+                    <li>Tweaked some parameters such as the size/deviation of the gaussian filter and changing the parameters on a high/low filter we apply on the image. This allowed us to get better image/edge outputs</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Why?</h2>
+                <ul>
+                    <li>Practicing Java as well as revisiting coding complex algorithms</li>
+                    <li>Revising image processing and line detection algorithms, as the topic was quite interesting at university and has many exciting applications (e.g. medical, robotics, categorization of images)</li>
+                    <li>It's quite a nice visual project, that you can actually show people the output of (examples to come!)</li>
+                </ul>
+            </section>
+            <section>
+                <h2>What's next</h2>
+                <ul>
+                    <li>Implementing the Hough transform algorithm to detect possible lines</li>
+                    <li>Adapting the Hough transform to work with oval shapes</li>
+                    <li>Revisit machine learning with the aim of identifying faces within images</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Skills used</h2>
+                <ul>
+                    <li>Java: Using some Java 8/9 features, working with images and files</li>
+                    <li>IntelliJ: setting up a project, using maven to bring in additional Java libraries, setting up git inside IntelliJ</li>
+                    <li>Algorithms: Relearning image processing algorithms and matrices and how we can combine them to get pretty pictures!</li>
+                </ul>
+            </section>
+            
+                
+        </main>
+    </div>
+</body>
+</html>
