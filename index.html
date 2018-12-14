@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="rgb(207, 232, 255)">
     <meta name="description" content="A resumé and portfolio for Chris Bates">
-    <title>Chris Bates' website</title>
+    <title>Chris Bates' CV site</title>
 
     <link rel="icon" type="image/png" href="icons/favicon-16x16.png" sizes="16x16">  
     <link rel="icon" type="image/png" href="icons/favicon-32x32.png" sizes="32x32">
@@ -30,13 +30,63 @@
             <h2>Work Experience</h2>
             <section>
                 <div class="resumeitem">
+                    <h4>GE Power Digital</h4>
+                    <div class="itemsummary">
+                        <span class="itemrole">
+                            <strong>Software Engineer - Java</strong>
+                        </span>
+                        <span class="itemdates">
+                            06/01/18-present
+                        </span>
+                    </div>
+                    <p class="itemdescription">
+                        Big data ingestion platform and data fabric development. Built out a data ingestion pipeline for large volume power data sources.<br>
+                        <strong>Skills:</strong> Java, Scala, Kubernetes/Docker, Cassandra, PostgreSQL, Spark, Elasticsearch/Kibana, Kafka, Apache NiFi, Jenkins, git, Jira, Scrum, Python.
+                    </p>
+                    <a class="btn btn-primary" data-toggle="collapse" href="#gejobdetail" role="button" aria-expanded="false" aria-controls="gejobdetail">
+                        Details
+                    </a>
+                    <ul id="gejobdetail" class="itemdetail collapse">
+                        <li>
+                            Used Java with SpringBoot, Maven and JUnit testing to create a multi-threaded task manager from a configurable PostgreSQL database. Ensuring high test coverage was important to ensure the right jobs and tracking information was kept.
+                        </li>
+                        <li>
+                            Writing complex SparkSQL and PostgreSQL queries to ingest JSON into PostgreSQL/Cassandra. The original solution that I coded was a series of transformations to a Spark data frame, however I was able to write much more efficient SparkSQL to perform the same transformation.
+                        </li>
+                        <li>
+                            Writing configurable Dockerfiles for Elasticsearch and Kibana, as well as expanding on existing Dockerfiles for Kafka, ZooKeeper, PostgreSQL Cassandra etc to expose functionality. Choosing to build the images from the published archive files rather than use a public image gave us more oversight into how the image worked, as well as exposed parameters.
+                        </li>
+                        <li>
+                            Writing Kubernetes deployment scripts for the data fabric, as well as writing instructions on Kubernetes installation and configuration. My team lacked anyone with vast Kubernetes experience and the documentation required working around the company's proxy and proxied certificate.
+                        </li>
+                        <li>
+                            Building out a Jenkins pipeline for unit tests, integration tests and deploying to a test Kubernetes cluster. Managing the pipeline in Jenkins Groovy pipeline syntax and managing building and running all the applicable docker containers. This was a process that I had to expand and adapt as our product matured and reached sizes that could no longer sensibly run on one Jenkins machine.
+                        </li>
+                        <li>
+                            Being a major part of the security review for the product including drawing up threat models and discussing security requirements/solutions with the security team.
+                        </li>
+                        <li>
+                            Involving myself in larger GE initiatives to both familiarize myself with technologies other teams were using, while also looking forward to see the path well trodden. Reading internal GE technological discussion allowed me to get to know where to look and who to ask as our newer project hit similar blocks.
+                        </li>
+                        <li>
+                            Writing event data to Elasticsearch and displaying that data in Kibana.
+                        </li>
+                        <li>
+                            Reading and writing to Kafka topics from Java and NiFi. Configuring consumers to monitor topics in a asynchronous environment to launch of SparkSQL jobs.
+                        </li>
+                        <li>
+                            Creating Apache NiFi templates to point to different data sources.
+                        </li>
+                    </ul>
+                </div>
+                <div class="resumeitem">
                     <h4>AXLR8 Ltd</h4>
                     <div class="itemsummary">
                         <span class="itemrole">
                             <strong>Software Engineer</strong> (Remote contractor as of 1/18)
                         </span>
                         <span class="itemdates">
-                            11/01/14-Present
+                            11/01/14-05/01/18
                         </span>
                     </div>
                     <p class="itemdescription">
