@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="rgb(207, 232, 255)">
+    <meta name="description" content="A resumé and portfolio for Chris Bates">
+    <title>Chris Bates' website</title>
+
+    <link rel="icon" type="image/png" href="../icons/favicon-16x16.png" sizes="16x16">  
+    <link rel="icon" type="image/png" href="../icons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../icons/favicon-96x96.png" sizes="96x96">  
+
+    <link defer async rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link defer async rel="stylesheet" href="../css/basestyle.css">
+
+    <script defer src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script defer src="../js/corejs.js"></script>
+
+
+</head>
+<body>
+    <div class="container maincontainer animatein">
+        <header>
+            <h1 class="display-1 title pagechange" pageurl="/">Photo Organization</h1>
+        </header>
+        <main>
+            <section>
+                <h2>Summary</h2>
+                <p>
+                    This project aimed to determine important features of some of my family photos, so we can simulate something like Amazon/Google photos. This involved determining which data is available and how we can extract those features from different photo types (IPhone, Android, scanned). Exif data allowed me to extract a significant amount of data, such that I could begin the catagorization process, but for scanned photos in particular, I wanted to investigate some machine learning techniques such as facial recognition to extract some more data about when and maybe where the photo was taken.
+                </p>
+            </section>
+            <section>
+                <h2>What I have achieved so far</h2>
+                <ul>
+                    <li>Backing up the photos automatically to AWS bucket from multiple locations on my computer</li>
+                    <li>Exif data extraction to determine location and date of the photo</li>
+                    <li>Working with a using Python types to try to help with type safety inside the project</li>
+                    <li>Initial investigation into facial recognition, using a pre-tuned face extractor, to get cropped faces from the images</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Why?</h2>
+                <ul>
+                    <li>Allows me to organize my photos for free.</li>
+                    <li>Allows me to process the large backlog of my families photo libraries, especially from scanned images</li>
+                    <li>Experiment with developing my own Python code from scratch using the newer type system, that can be used to improve code reliability</li>
+                    <li>Play with facial recognition libraries in Python and developing my own classification</li>
+                </ul>
+            </section>
+            <section>
+                <h2>What's next</h2>
+                <ul>
+                    <li>Classifying the cropped faces into the recognized people in the photos and adding that data to the algorithm</li>
+                    <li>Combining multiple known classifications to fill in gaps or provide custom additional information (e.g. if it's my family in the photo in December then give it the tag Christmas)</li>
+                    <li>Storing the data in a sqllite database rather than organizing into folders, to allow recatagorization of folders</li>
+                    <li>Build a UI app to sort and filter the photos for display</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Skills used</h2>
+                <ul>
+                    <li>Python: project organization, Python types, photo Exif extraction, ML libraries</li>
+                    <li>CV2: ML algorithm for classification of faces and how to apply different classification algorithms</li>
+                </ul>
+            </section>
+            
+                
+        </main>
+    </div>
+</body>
+</html>
