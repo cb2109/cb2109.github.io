@@ -41,27 +41,38 @@
                     </div>
                     <p class="itemdescription">
                         Big data ingestion platform and data fabric development. Built out a data ingestion pipeline for large volume power data sources.<br>
-                        <strong>Skills:</strong> Java, Scala, Kubernetes/Docker, Cassandra, PostgreSQL, Spark, Elasticsearch/Kibana, Kafka, Apache NiFi, Jenkins, git, Jira, Scrum, Python.
+                        <strong>Skills:</strong> Java, PostgreSQL/TimescaleDb, Helm, Kubernetes/Docker, AWS,
+                        Python, Ansible, Apache Spark, Elasticsearch/Kibana, Kafka, Apache NiFi, Jenkins, git, Jira, Scrum, Cassandra, GoLang.
                     </p>
                     <a class="btn btn-primary" data-toggle="collapse" href="#gejobdetail" role="button" aria-expanded="false" aria-controls="gejobdetail">
                         Details
                     </a>
                     <ul id="gejobdetail" class="itemdetail collapse">
                         <li>
+                            Writing Kubernetes deployment scripts for the data fabric, as well as writing instructions on Kubernetes installation and configuration. My team lacked anyone with vast Kubernetes experience and the documentation required working around the company's proxy and proxied certificate.
+                        </li>
+                        <li>
+                            Writing configurable Docker files for multiple open source technologies (Elasticsearch, TimescaleDb, Kafka, Zookeeper). Choosing to build the images from the published archive files rather than use a public image gave us more oversight into how the image worked, as well as exposed parameters.
+                        </li>
+                        <li>
+                            Overhauling an Ansible pipeline for deployment of the code base to Kubernetes, to ensure it was simple, yet configurable.
+                        </li>
+                        <li>
+                            Supporting analytics on Apache Spark connecting to a TimescaleDb database. This involved a lot of performance tuning, focusing on both improving how Spark was utilized as well as significant query performance optimization, due to the size of the data set we were working with. By working on these processes, I managed to take the runtime from days to hours and deal with complex analysis of hundreds of gigabytes of data.
+                        </li>
+                        <li>
+                            Building out a Jenkins pipeline for unit tests, integration tests and deploying to a test Kubernetes cluster. Managing the pipeline in Jenkins Groovy pipeline syntax and managing building and running all the applicable docker containers. This was a process that I had to expand and adapt as our product matured and grew to ensure build times were still reasonable for developers.
+                        </li>
+                        <li>
+                            Trying to learn and invest in every part of the product through code review, meaning I could jump in on any given part of the project and help support parts of the team that were overworked. In the end I could be called on to work on everything from infrastructure deployment, through Jenkins DevOps support, front end Angular development and analytic code execution. 
+                        </li>
+                        <li>
                             Used Java with SpringBoot, Maven and JUnit testing to create a multi-threaded task manager from a configurable PostgreSQL database. Ensuring high test coverage was important to ensure the right jobs and tracking information was kept.
                         </li>
                         <li>
                             Writing complex SparkSQL and PostgreSQL queries to ingest JSON into PostgreSQL/Cassandra. The original solution that I coded was a series of transformations to a Spark data frame, however I was able to write much more efficient SparkSQL to perform the same transformation.
                         </li>
-                        <li>
-                            Writing configurable Dockerfiles for Elasticsearch and Kibana, as well as expanding on existing Dockerfiles for Kafka, ZooKeeper, PostgreSQL Cassandra etc to expose functionality. Choosing to build the images from the published archive files rather than use a public image gave us more oversight into how the image worked, as well as exposed parameters.
-                        </li>
-                        <li>
-                            Writing Kubernetes deployment scripts for the data fabric, as well as writing instructions on Kubernetes installation and configuration. My team lacked anyone with vast Kubernetes experience and the documentation required working around the company's proxy and proxied certificate.
-                        </li>
-                        <li>
-                            Building out a Jenkins pipeline for unit tests, integration tests and deploying to a test Kubernetes cluster. Managing the pipeline in Jenkins Groovy pipeline syntax and managing building and running all the applicable docker containers. This was a process that I had to expand and adapt as our product matured and reached sizes that could no longer sensibly run on one Jenkins machine.
-                        </li>
+                        
                         <li>
                             Being a major part of the security review for the product including drawing up threat models and discussing security requirements/solutions with the security team.
                         </li>
@@ -97,6 +108,9 @@
                         Details
                     </a>
                     <ul id="axlr8jobdetail" class="itemdetail collapse">
+                        <li>
+                            Worked as a full stack engineer, building both front-end and back-end components for the web-based management system.
+                        </li>
                         <li>
                             Created a MSAccess SQL to PostgreSQL interpreter to support both legacy and current systems while migrating databases. Performing this accurately and efficiently required a deep understanding of SQL and interpreter technology. This had to be written in PHP and vbscript.
                         </li>
